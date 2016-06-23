@@ -26,13 +26,8 @@ public class consulta extends conexion{
         return false;
     
 }
-    public static void main(String[] ar) throws SQLException{
+    /*public static void main(String[] ar) throws SQLException{
         consulta coneccion=new consulta();
         System.out.println(coneccion.autenticacion("wdrojas8@gmail.com","12345678"));
-    }
-
-    private boolean autenticacion(String wdrojas8gmailcom, String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
+    }*/
 }

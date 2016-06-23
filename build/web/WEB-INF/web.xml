@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>cliente</servlet-name>
+        <servlet-class>fiestaycumbia.cliente.cliente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>controller</servlet-name>
+        <servlet-class>cliente.controller</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>aplication_controller</servlet-name>
+        <servlet-class>fiestaycumbia.controller.aplication_controller</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cliente</servlet-name>
+        <url-pattern>/clientes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controller</servlet-name>
+        <url-pattern>/controller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>aplication_controller</servlet-name>
+        <url-pattern>/appcontroller</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
